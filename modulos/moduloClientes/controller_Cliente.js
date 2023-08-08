@@ -235,7 +235,7 @@ export function deleteCliente() {
     )
 }
 
-fetch("/modulos/moduloClientes/data_Clientes.json")
+fetch("modulos/moduloClientes/data_Clientes.json")
     .then(function (response) {
         return response.json();
     })
