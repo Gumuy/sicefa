@@ -254,7 +254,7 @@ export function deleteempleado() {
     )
 }
 
-fetch("modulos/ModuloEmpleado/data_Empleado.json")
+fetch("/modulos/ModuloEmpleado/data_Empleado.json")
     .then(function (response) {
         return response.json();
     })
