@@ -15,7 +15,7 @@
         "fecha_nacimiento": "04062004",
         "telefono": "4777433434",
         "venta_publico": "si",
-        "estatus": "activo"
+        "estatus": "Activo"
     },
     {
         "nombre": "Susana",
@@ -33,7 +33,7 @@
         "fecha_nacimiento": "04062004",
         "telefono": "4777433434",
         "venta_publico": "si",
-        "estatus": "activo"
+        "estatus": "Activo"
     },
     {
         "nombre": "Arnulfo",
@@ -51,7 +51,7 @@
         "fecha_nacimiento": "04062004",
         "telefono": "4777433434",
         "venta_publico": "si",
-        "estatus": "activo"
+        "estatus": "Activo"
     },
     {
         "nombre": "Mariana",
@@ -69,7 +69,7 @@
         "fecha_nacimiento": "04062004",
         "telefono": "4777433434",
         "venta_publico": "si",
-        "estatus": "activo"
+        "estatus": "Activo"
     },
     {
         "nombre": "Cristian",
@@ -87,6 +87,6 @@
         "fecha_nacimiento": "04062004",
         "telefono": "4777433434",
         "venta_publico": "si",
-        "estatus": "activo"
+        "estatus": "Activo"
     }
 ]

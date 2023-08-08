@@ -186,6 +186,42 @@ export function updateCliente() {
     clean();
     loadTabla();
 }
+export function filterEstatus() {
+    let filtroEstatus = document.getElementById("lstFilterEstatus").value;
+    console.log(filtroEstatus);
+    if (filtroEstatus != "Elige una opción") {
+        let resultados = clientes.filter(element => element.estatus === filtroEstatus);
+        let cuerpo = "";
+        resultados.forEach(function (cliente) {
+            let registro =
+                '<tr onclick="moduloCliente.selectCliente(' + clientes.indexOf(cliente) + ');">' +
+                '<td>' + cliente.nombre + '</td>' +
+                '<td>' + cliente.primer_apellido + ' ' + cliente.segundo_apellido + '</td>' +
+                '<td>' + cliente.genero + '</td>' +
+                '<td>' + cliente.telefono + '</td>' +
+                '<td>' + cliente.estatus + '</td></tr>';
+            cuerpo += registro;
+        });
+        console.log(cuerpo);
+        document.getElementById("tblClientes").innerHTML = cuerpo;
+
+    } else {
+        let cuerpo = "";
+        clientes.forEach(function (cliente) {
+            let registro =
+                '<tr onclick="moduloCliente.selectCliente(' + clientes.indexOf(cliente) + ');">' +
+                '<td>' + cliente.nombre + '</td>' +
+                '<td>' + cliente.primer_apellido + ' ' + cliente.segundo_apellido + '</td>' +
+                '<td>' + cliente.genero + '</td>' +
+                '<td>' + cliente.telefono + '</td>' +
+                '<td>' + cliente.estatus + '</td></tr>';
+            cuerpo += registro;
+        });
+        console.log(cuerpo);
+        document.getElementById("tblClientes").innerHTML = cuerpo;
+    }
+
+}
 
 export function deleteCliente() {
     clientes[indexClienteSeleccionado].estatus = "Inactivo";
